@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">alugacar</string>
+    <string name="name_hint">Nome</string>
+    <string name="email_hint">Email</string>
+    <string name="phone_hint">Telefone</string>
+    <string name="adress_hint">Endereço</string>
+    <string name="describe_hint">Descrição</string>
+    <string name="subscriber_button">CADASTRAR</string>
+    <string name="subscriber_title">Cadastro</string>
+    <string name="subscriber_success">Cadastro realizado</string>
+    <string name="subscriber_failure">Erro no cadastro!</string>
+    <string name="lista_motoristas">Lista de motoristas</string>
+    <string name="motorista_button_update">EDITAR</string>
+    <string name="update_sucess">Dados atualizados</string>
+    <string name="update_failure">Erro na atualização</string>
+    <string name="delte_button">EXCLUIR</string>
+    <string name="delete_sucess">Deletado com sucesso</string>
+    <string name="delete_error">Erro ao tentar deletar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="boas_vindas">Bem vindo ao AlugaCar</string>
+    <string name="start_button_text_start">next</string>
+    <string name="app_title">AlugaCar: seu problema nossa soluçaõ</string>
+</resources>

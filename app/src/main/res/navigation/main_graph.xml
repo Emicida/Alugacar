@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/motoristaListFragment">
+
+    <fragment
+        android:id="@+id/fragment_start"
+        android:name="com.example.alugacar.StartFragment"
+        android:label="@string/boas_vindas"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_fragment_start_to_motoristaListFragment"
+            app:destination="@id/motoristaListFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/motoristaListFragment"
+        android:name="com.example.alugacar.ui.MotoristaListFragment"
+        android:label="@string/lista_motoristas"
+        tools:layout="@layout/motorista_list_fragment" >
+        <action
+            android:id="@+id/action_motoristaListFragment_to_motoristaFragment"
+            app:destination="@id/motoristaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/motoristaFragment"
+        android:name="com.example.alugacar.ui.MotoristaFragment"
+        android:label="@string/subscriber_title"
+        tools:layout="@layout/motorista_fragment" >
+        <argument
+            android:name="motorista"
+            app:argType="com.example.alugacar.db.MotoristaEntity"
+            android:defaultValue="@null"
+            app:nullable="true" />
+    </fragment>
+</navigation>
